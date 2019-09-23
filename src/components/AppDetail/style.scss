@@ -1,0 +1,107 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.16rem;
+  &-image {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+  &-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-left: 0.16rem;
+    color: #666;
+    &-button {
+      width: 0.6rem;
+      height: 0.24rem;
+      border-radius: 0.12rem;
+      background-color: #408fff;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-title {
+      color: #333;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+}
+.detail-carousel {
+  height: 1.5rem !important;
+  ul {
+    height: 1.5rem !important;
+  }
+}
+.detail {
+  &-back {
+    display: flex;
+    align-items: center;
+    margin: 0.16rem 0 0 0.08rem;
+    color: #408fff;
+    font-weight: bold;
+  }
+  &-rating {
+    display: flex;
+    align-items: center;
+    margin: 0 0.16rem 0.16rem 0.16rem;
+    font-size: 20px;
+    color: #999;
+    &-title {
+      margin-right: 0.06rem;
+      margin-bottom: -0.03rem;
+    }
+  }
+  &-version {
+    &-footer {
+      color: #333;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    padding: 0 0.16rem;
+    &-version,
+    &-time {
+      display: block;
+      margin: 0.08rem 0;
+      font-size: 14px;
+      color: #999;
+    }
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      &-title {
+        color: #333;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      &-text {
+        color: #408fff;
+        font-size: 14px;
+      }
+    }
+  }
+  &-description {
+    padding: 0 0.16rem 0 0.16rem;
+    border-radius: 0.08rem;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+  }
+  &-split {
+    height: 1px;
+    background-color: #ccc;
+    margin: 0.16rem;
+    transform: scaleY(0.5);
+    box-sizing: border-box;
+  }
+  &-carousel {
+    &-images {
+      touch-action: none;
+      height: 1.5rem;
+      border-radius: 0.16rem;
+    }
+  }
+}

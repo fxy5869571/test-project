@@ -2,6 +2,11 @@
   flex: 1;
   width: 3.75rem;
   box-sizing: border-box;
+  &-no-result {
+    margin-top: 1rem;
+    color: #999;
+    font-size: 20px;
+  }
   &-item {
     position: relative;
     padding: 0.16rem;
@@ -9,6 +14,10 @@
     height: 1rem;
     display: flex;
     align-items: center;
+    &-footer {
+      display: flex;
+      align-items: center;
+    }
     &-split {
       position: absolute;
       left: 0.16rem;
@@ -27,11 +36,13 @@
       width: 0.6rem;
       height: 0.6rem;
       border-radius: 0.16rem;
+      background-color: #eee;
     }
     &-radius {
       width: 0.6rem;
       height: 0.6rem;
       border-radius: 50%;
+      background-color: #eee;
     }
     &-right {
       display: flex;

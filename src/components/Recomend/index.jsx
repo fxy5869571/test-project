@@ -6,6 +6,7 @@ const Recomend = (props) => {
         <div className="recomend">
             {entry.map(item =>
                 <div key={item.id.attributes['im:id']}
+                    onClick={props.goToDetail}
                     className="recomend-item">
                     <div className="recomend-item-container">
                         <img src={item['im:image'][2].label} alt=""

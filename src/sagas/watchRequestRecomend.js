@@ -3,7 +3,7 @@ import { RECEIVE_RECOMEND, REQUEST_RECOMEND } from "../actions";
 import { getrecomend } from "../api";
 export function* requestRecomend(payload) {
   const data = yield call(getrecomend, payload);
-  yield delay(1000);
+  yield delay(1);
   yield put({ type: RECEIVE_RECOMEND, data });
 }
 

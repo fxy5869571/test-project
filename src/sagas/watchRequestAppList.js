@@ -3,8 +3,7 @@ import { REQUEST_APP_LIST, RECEIVE_APP_LIST } from "../actions";
 import { getAppList } from "../api";
 export function* requestAppList(payload) {
   const data = yield call(getAppList, payload);
-  yield delay(1000);
-
+  yield delay(1);
   yield put({ type: RECEIVE_APP_LIST, data });
 }
 

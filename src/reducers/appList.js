@@ -5,7 +5,7 @@ function AppList(state = [], action) {
     case REQUEST_APP_LIST:
       return state;
     case RECEIVE_APP_LIST:
-      return { ...state, ...action.data.feed };
+      return [...state, ...action.data];
     default:
       return state;
   }

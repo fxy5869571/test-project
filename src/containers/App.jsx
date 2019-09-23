@@ -1,15 +1,16 @@
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import App from '../components/App'
-import { requestAppList, requestRecomend } from '../actions'
+import { requestAppList, requestRecomend, requestSearchApp } from '../actions'
 const mapStateToProps = (state) => {
     return state
 }
 
 function mapDispatchToProps(dispatch) {
     return {
-        receiveAppList: bindActionCreators(requestAppList, dispatch),
-        receiveRecomend: bindActionCreators(requestRecomend, dispatch),
+        requestSearchApp: bindActionCreators(requestSearchApp, dispatch),
+        requestAppList: bindActionCreators(requestAppList, dispatch),
+        requestRecomend: bindActionCreators(requestRecomend, dispatch),
     }
 }
 
